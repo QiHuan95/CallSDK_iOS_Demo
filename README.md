@@ -3,7 +3,7 @@
 
 TILCallSDK基于[ILiveSDK](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos)，实现双人视频(多人)业务功能封装，方便开发者快速搭建自己的视频聊天服务
 
-![](http://mc.qcloudimg.com/static/img/5ae17d8ed893fb6a9b42c632dc9daecb/image.png)
+![](http://mc.qcloudimg.com/static/img/eac611468f299d64923299a6873ee447/image.png)
 
 
 ## 集成
