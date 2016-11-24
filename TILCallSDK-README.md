@@ -5,7 +5,7 @@
 
 ## 1. 预先集成ILiveSDK
 
-用户在使用TILCallSDK前需要预先集成、初始化和登录ILiveSDK，[集成ILiveSDk步骤](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos/blob/master/ILiveSDK-README.md)。
+用户在使用TILCallSDK前需要预先集成、初始化和登录ILiveSDK，[集成ILiveSDK步骤](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos/blob/master/ILiveSDK-README.md)。
 
 
 ## 2. TILCallSDK集成和使用
