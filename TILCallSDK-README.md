@@ -12,8 +12,6 @@
 
 ### 2.1 集成TILCallSDK
 
-在使用TILCallSDK之前需要初始化和登录ILiveSDK，可以[查看](#ILiveSDK)。然后从下载包中\Frameworks\ILiveSDK\引入TILCallSDK.framework到工程即可。
-
 使用TILCallSDK时只需考虑4个步骤：监听来电、发起通话、接听通话和结束通话。
 
 ### 2.2 设置来电监听
