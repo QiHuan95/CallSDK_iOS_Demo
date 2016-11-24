@@ -57,4 +57,4 @@ cancelCall:|TILC2CCall|结束通话
 
 
 ## 快速接入
-请移步[视频聊天快速接入](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos/blob/master/TILCallSDK-README.md)
+请移步[视频聊天快速接入](https://github.com/zhaoyang21cn/CallSDK_iOS_Demo/blob/master/TILCallSDK-README.md)
