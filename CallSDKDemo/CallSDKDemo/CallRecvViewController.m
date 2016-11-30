@@ -23,11 +23,17 @@
 
 - (void)initCall{
     TILC2CCallConfig * c2cConfig = [[TILC2CCallConfig alloc] init];
-    c2cConfig.callType = TILCALL_TYPE_VIDEO;
-    c2cConfig.isSponsor = NO;
-    c2cConfig.peerId = self.peerId;
-    c2cConfig.heartBeatInterval = 3;
-    c2cConfig.callStatusListener = self;
+    TILC2CCallBaseConfig * baseConfig = [[TILC2CCallBaseConfig alloc] init];
+    baseConfig.callType = TILCALL_TYPE_VIDEO;
+    baseConfig.isSponsor = NO;
+    baseConfig.peerId = self.peerId;
+    baseConfig.heartBeatInterval = 3;
+    c2cConfig.baseConfig = baseConfig;
+    
+    TILC2CCallListener * listener = [[TILC2CCallListener alloc] init];
+    listener.callStatusListener = self;
+    c2cConfig.callListener = listener;
+    
     TILC2CResponderConfig * responderConfig = [[TILC2CResponderConfig alloc] init];
     responderConfig.callInvitation = self.invite;
     c2cConfig.responderConfig = responderConfig;
@@ -93,14 +99,16 @@
 
 - (IBAction)switchReceiver:(id)sender {
     ILiveRoomManager *manager = [ILiveRoomManager getInstance];
-    BOOL isOn = [manager getCurSpeakerState];
     __weak typeof(self) ws = self;
-    [manager enableSpeaker:!isOn succ:^{
-        ws.errLabel.text = !isOn?@"打开扬声器成功":@"切换到听筒成功";
-        [ws.switchReceiverButton setTitle:(!isOn?@"切换到听筒":@"打开扬声器") forState:UIControlStateNormal];
-    } failed:^(NSString *moudle, int errId, NSString *errMsg) {
-        ws.errLabel.text = [NSString stringWithFormat:@"moudle=%@,errId=%d,errMsg=%@",moudle,errId,errMsg];
-    }];
+    QAVOutputMode mode = [manager getCurAudioMode];
+    ws.errLabel.text = (mode == QAVOUTPUTMODE_EARPHONE?@"切换扬声器成功":@"切换到听筒成功");
+    [ws.switchReceiverButton setTitle:(mode == QAVOUTPUTMODE_EARPHONE?@"切换到听筒":@"切换扬声器") forState:UIControlStateNormal];
+    if(mode == QAVOUTPUTMODE_EARPHONE){
+        [manager setAudioMode:QAVOUTPUTMODE_SPEAKER];
+    }
+    else{
+        [manager setAudioMode:QAVOUTPUTMODE_EARPHONE];
+    }
 }
 
 - (IBAction)setBeauty:(id)sender {
@@ -155,9 +163,7 @@
         default:
             break;
     }
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    });
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
