@@ -11,7 +11,7 @@ CallSDKDemo里面集成了第三方库，下载CallSDKDemo工程之后,需要再
 
 [ILiveSDK下载](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos)
                 
-[TILCallSDK下载](https://github.com/zhaoyang21cn/CallSDK_iOS_Demo/blob/master/TILCallSDK-README.md)
+[TILCallSDK下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/TILCallSDK_1.0.0.zip)
 
 [AVSDK和IMSDK下载](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos)
 
