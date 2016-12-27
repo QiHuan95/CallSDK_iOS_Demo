@@ -14,5 +14,6 @@
 - (IBAction)login:(id)sender;
 - (IBAction)registe:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *errLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentControl;
 
 @end

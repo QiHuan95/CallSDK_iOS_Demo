@@ -45,12 +45,16 @@
 		9BB8456A1DE68F5B00A0F1A4 /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB8455D1DE68F5B00A0F1A4 /* TLSSDK.framework */; };
 		9BB8457A1DE692C000A0F1A4 /* CallIncomingListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8456F1DE692C000A0F1A4 /* CallIncomingListener.m */; };
 		9BB8457B1DE692C000A0F1A4 /* CallLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845711DE692C000A0F1A4 /* CallLoginViewController.m */; };
-		9BB8457C1DE692C000A0F1A4 /* CallMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845731DE692C000A0F1A4 /* CallMainViewController.m */; };
-		9BB8457D1DE692C000A0F1A4 /* CallMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845751DE692C000A0F1A4 /* CallMakeViewController.m */; };
-		9BB8457E1DE692C000A0F1A4 /* CallRecvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845771DE692C000A0F1A4 /* CallRecvViewController.m */; };
 		9BB8457F1DE692C000A0F1A4 /* CallRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */; };
 		9BB845821DE69BCF00A0F1A4 /* ILiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB845801DE69BCF00A0F1A4 /* ILiveSDK.framework */; };
-		9BB845831DE69BCF00A0F1A4 /* TILCallSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BB845811DE69BCF00A0F1A4 /* TILCallSDK.framework */; };
+		CF56AD8D1E120E8700802416 /* TILCallSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF56AD8C1E120E8700802416 /* TILCallSDK.framework */; };
+		CF62AEBF1E111B6900843724 /* CallMultiMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */; };
+		CF62AEC01E111B6900843724 /* CallMultiMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBC1E111B6900843724 /* CallMultiMakeViewController.m */; };
+		CF62AEC11E111B6900843724 /* CallMultiRecvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBE1E111B6900843724 /* CallMultiRecvViewController.m */; };
+		CF62AEC81E111CA500843724 /* CallC2CMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEC31E111CA500843724 /* CallC2CMainViewController.m */; };
+		CF62AEC91E111CA500843724 /* CallC2CMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEC51E111CA500843724 /* CallC2CMakeViewController.m */; };
+		CF62AECA1E111CA500843724 /* CallC2CRecvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEC71E111CA500843724 /* CallC2CRecvViewController.m */; };
+		CF62AECD1E112AFD00843724 /* CallTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AECC1E112AFD00843724 /* CallTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,16 +103,24 @@
 		9BB8456F1DE692C000A0F1A4 /* CallIncomingListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallIncomingListener.m; sourceTree = "<group>"; };
 		9BB845701DE692C000A0F1A4 /* CallLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallLoginViewController.h; sourceTree = "<group>"; };
 		9BB845711DE692C000A0F1A4 /* CallLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallLoginViewController.m; sourceTree = "<group>"; };
-		9BB845721DE692C000A0F1A4 /* CallMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMainViewController.h; sourceTree = "<group>"; };
-		9BB845731DE692C000A0F1A4 /* CallMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMainViewController.m; sourceTree = "<group>"; };
-		9BB845741DE692C000A0F1A4 /* CallMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMakeViewController.h; sourceTree = "<group>"; };
-		9BB845751DE692C000A0F1A4 /* CallMakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMakeViewController.m; sourceTree = "<group>"; };
-		9BB845761DE692C000A0F1A4 /* CallRecvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRecvViewController.h; sourceTree = "<group>"; };
-		9BB845771DE692C000A0F1A4 /* CallRecvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRecvViewController.m; sourceTree = "<group>"; };
 		9BB845781DE692C000A0F1A4 /* CallRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRegisterViewController.h; sourceTree = "<group>"; };
 		9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRegisterViewController.m; sourceTree = "<group>"; };
 		9BB845801DE69BCF00A0F1A4 /* ILiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveSDK.framework; sourceTree = "<group>"; };
-		9BB845811DE69BCF00A0F1A4 /* TILCallSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TILCallSDK.framework; sourceTree = "<group>"; };
+		CF56AD8C1E120E8700802416 /* TILCallSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TILCallSDK.framework; sourceTree = "<group>"; };
+		CF62AEB91E111B6900843724 /* CallMultiMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMainViewController.h; sourceTree = "<group>"; };
+		CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMultiMainViewController.m; sourceTree = "<group>"; };
+		CF62AEBB1E111B6900843724 /* CallMultiMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMakeViewController.h; sourceTree = "<group>"; };
+		CF62AEBC1E111B6900843724 /* CallMultiMakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMultiMakeViewController.m; sourceTree = "<group>"; };
+		CF62AEBD1E111B6900843724 /* CallMultiRecvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiRecvViewController.h; sourceTree = "<group>"; };
+		CF62AEBE1E111B6900843724 /* CallMultiRecvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMultiRecvViewController.m; sourceTree = "<group>"; };
+		CF62AEC21E111CA500843724 /* CallC2CMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallC2CMainViewController.h; sourceTree = "<group>"; };
+		CF62AEC31E111CA500843724 /* CallC2CMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallC2CMainViewController.m; sourceTree = "<group>"; };
+		CF62AEC41E111CA500843724 /* CallC2CMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallC2CMakeViewController.h; sourceTree = "<group>"; };
+		CF62AEC51E111CA500843724 /* CallC2CMakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallC2CMakeViewController.m; sourceTree = "<group>"; };
+		CF62AEC61E111CA500843724 /* CallC2CRecvViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallC2CRecvViewController.h; sourceTree = "<group>"; };
+		CF62AEC71E111CA500843724 /* CallC2CRecvViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallC2CRecvViewController.m; sourceTree = "<group>"; };
+		CF62AECB1E112AFD00843724 /* CallTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallTableViewController.h; sourceTree = "<group>"; };
+		CF62AECC1E112AFD00843724 /* CallTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +139,7 @@
 				9BB845201DE68BEA00A0F1A4 /* VideoToolbox.framework in Frameworks */,
 				9BB845661DE68F5B00A0F1A4 /* ImSDK.framework in Frameworks */,
 				9BB845181DE68BEA00A0F1A4 /* Foundation.framework in Frameworks */,
-				9BB845831DE69BCF00A0F1A4 /* TILCallSDK.framework in Frameworks */,
+				CF56AD8D1E120E8700802416 /* TILCallSDK.framework in Frameworks */,
 				9BB845231DE68BEA00A0F1A4 /* UIKit.framework in Frameworks */,
 				9BB8456A1DE68F5B00A0F1A4 /* TLSSDK.framework in Frameworks */,
 				9BB8451C1DE68BEA00A0F1A4 /* CoreGraphics.framework in Frameworks */,
@@ -171,16 +183,14 @@
 		9BB844EA1DE68BCC00A0F1A4 /* CallSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF62AECB1E112AFD00843724 /* CallTableViewController.h */,
+				CF62AECC1E112AFD00843724 /* CallTableViewController.m */,
+				CF62AEB71E111B6900843724 /* C2CCall */,
+				CF62AEB81E111B6900843724 /* MultiCall */,
 				9BB8456E1DE692C000A0F1A4 /* CallIncomingListener.h */,
 				9BB8456F1DE692C000A0F1A4 /* CallIncomingListener.m */,
 				9BB845701DE692C000A0F1A4 /* CallLoginViewController.h */,
 				9BB845711DE692C000A0F1A4 /* CallLoginViewController.m */,
-				9BB845721DE692C000A0F1A4 /* CallMainViewController.h */,
-				9BB845731DE692C000A0F1A4 /* CallMainViewController.m */,
-				9BB845741DE692C000A0F1A4 /* CallMakeViewController.h */,
-				9BB845751DE692C000A0F1A4 /* CallMakeViewController.m */,
-				9BB845761DE692C000A0F1A4 /* CallRecvViewController.h */,
-				9BB845771DE692C000A0F1A4 /* CallRecvViewController.m */,
 				9BB845781DE692C000A0F1A4 /* CallRegisterViewController.h */,
 				9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */,
 				9BB844EE1DE68BCC00A0F1A4 /* AppDelegate.h */,
@@ -235,8 +245,8 @@
 		9BB8454D1DE68F5B00A0F1A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF56AD8C1E120E8700802416 /* TILCallSDK.framework */,
 				9BB845801DE69BCF00A0F1A4 /* ILiveSDK.framework */,
-				9BB845811DE69BCF00A0F1A4 /* TILCallSDK.framework */,
 				9BB8454E1DE68F5B00A0F1A4 /* AVSDK */,
 				9BB845571DE68F5B00A0F1A4 /* IMSDK */,
 			);
@@ -266,6 +276,32 @@
 				9BB8455D1DE68F5B00A0F1A4 /* TLSSDK.framework */,
 			);
 			path = IMSDK;
+			sourceTree = "<group>";
+		};
+		CF62AEB71E111B6900843724 /* C2CCall */ = {
+			isa = PBXGroup;
+			children = (
+				CF62AEC21E111CA500843724 /* CallC2CMainViewController.h */,
+				CF62AEC31E111CA500843724 /* CallC2CMainViewController.m */,
+				CF62AEC41E111CA500843724 /* CallC2CMakeViewController.h */,
+				CF62AEC51E111CA500843724 /* CallC2CMakeViewController.m */,
+				CF62AEC61E111CA500843724 /* CallC2CRecvViewController.h */,
+				CF62AEC71E111CA500843724 /* CallC2CRecvViewController.m */,
+			);
+			path = C2CCall;
+			sourceTree = "<group>";
+		};
+		CF62AEB81E111B6900843724 /* MultiCall */ = {
+			isa = PBXGroup;
+			children = (
+				CF62AEB91E111B6900843724 /* CallMultiMainViewController.h */,
+				CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */,
+				CF62AEBB1E111B6900843724 /* CallMultiMakeViewController.h */,
+				CF62AEBC1E111B6900843724 /* CallMultiMakeViewController.m */,
+				CF62AEBD1E111B6900843724 /* CallMultiRecvViewController.h */,
+				CF62AEBE1E111B6900843724 /* CallMultiRecvViewController.m */,
+			);
+			path = MultiCall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +335,7 @@
 				TargetAttributes = {
 					9BB844E71DE68BCC00A0F1A4 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 6NQND948ZC;
+						DevelopmentTeam = GS763F39GF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -343,15 +379,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BB8457E1DE692C000A0F1A4 /* CallRecvViewController.m in Sources */,
 				9BB844F31DE68BCC00A0F1A4 /* ViewController.m in Sources */,
+				CF62AEC01E111B6900843724 /* CallMultiMakeViewController.m in Sources */,
 				9BB8457A1DE692C000A0F1A4 /* CallIncomingListener.m in Sources */,
+				CF62AECA1E111CA500843724 /* CallC2CRecvViewController.m in Sources */,
+				CF62AECD1E112AFD00843724 /* CallTableViewController.m in Sources */,
 				9BB844F01DE68BCC00A0F1A4 /* AppDelegate.m in Sources */,
+				CF62AEC91E111CA500843724 /* CallC2CMakeViewController.m in Sources */,
+				CF62AEC81E111CA500843724 /* CallC2CMainViewController.m in Sources */,
+				CF62AEBF1E111B6900843724 /* CallMultiMainViewController.m in Sources */,
 				9BB8455F1DE68F5B00A0F1A4 /* README.md in Sources */,
-				9BB8457D1DE692C000A0F1A4 /* CallMakeViewController.m in Sources */,
+				CF62AEC11E111B6900843724 /* CallMultiRecvViewController.m in Sources */,
 				9BB8457B1DE692C000A0F1A4 /* CallLoginViewController.m in Sources */,
 				9BB8457F1DE692C000A0F1A4 /* CallRegisterViewController.m in Sources */,
-				9BB8457C1DE692C000A0F1A4 /* CallMainViewController.m in Sources */,
 				9BB844ED1DE68BCC00A0F1A4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,7 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6NQND948ZC;
+				DEVELOPMENT_TEAM = GS763F39GF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,11 +513,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CallSDKDemo/CallSDKDemo.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CallSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.CallSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenneth.TCILiveSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -486,7 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6NQND948ZC;
+				DEVELOPMENT_TEAM = GS763F39GF;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,11 +538,12 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CallSDKDemo/CallSDKDemo.pch;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CallSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.CallSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kenneth.TCILiveSDKDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -525,6 +567,7 @@
 				9BB845011DE68BCC00A0F1A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

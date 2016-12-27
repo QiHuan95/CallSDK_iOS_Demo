@@ -7,16 +7,25 @@
 //
 
 #import "CallIncomingListener.h"
-#import "CallRecvViewController.h"
+#import "CallMultiRecvViewController.h"
+#import "CallC2CRecvViewController.h"
 #import "AppDelegate.h"
 
 @implementation CallIncomingListener
-- (void)onC2CCallInvitation:(TILC2CCallInvitation*)invitation;
+- (void)onC2CCallInvitation:(TILCallInvitation *)invitation
 {
     UINavigationController *nav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    CallRecvViewController *call = [nav.storyboard instantiateViewControllerWithIdentifier:@"CallRecvViewController"];
-    call.peerId = invitation.sponsorId;
+    CallC2CRecvViewController *call = [nav.storyboard instantiateViewControllerWithIdentifier:@"CallC2CRecvViewController"];
     call.invite = invitation;
     [nav presentViewController:call animated:YES completion:nil];
 }
+
+- (void)onMultiCallInvitation:(TILCallInvitation *)invitation
+{
+    UINavigationController *nav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+    CallMultiRecvViewController *call = [nav.storyboard instantiateViewControllerWithIdentifier:@"CallMultiRecvViewController"];
+    call.invite = invitation;
+    [nav presentViewController:call animated:YES completion:nil];
+}
+
 @end

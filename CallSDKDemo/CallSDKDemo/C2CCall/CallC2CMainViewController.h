@@ -1,5 +1,5 @@
 //
-//  CallMainViewController.h
+//  CallC2CMainViewController.h
 //  TCILiveSDKDemo
 //
 //  Created by kennethmiao on 16/11/2.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CallMainViewController : UIViewController
+@interface CallC2CMainViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *userLabel;
 @property (weak, nonatomic) IBOutlet UITextField *peerTextField;
 @property (weak, nonatomic) IBOutlet UILabel *errLabel;

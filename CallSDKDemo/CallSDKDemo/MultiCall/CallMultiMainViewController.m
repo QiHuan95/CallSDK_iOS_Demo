@@ -1,24 +1,23 @@
 //
-//  CallMainViewController.m
+//  CallMultiMainViewController.m
 //  TCILiveSDKDemo
 //
 //  Created by kennethmiao on 16/11/2.
 //  Copyright © 2016年 kennethmiao. All rights reserved.
 //
 
-#import "CallMainViewController.h"
-#import "CallMakeViewController.h"
+#import "CallMultiMainViewController.h"
+#import "CallMultiMakeViewController.h"
 #import "CallIncomingListener.h"
 
 
-@interface CallMainViewController () <UITextFieldDelegate>
+@interface CallMultiMainViewController () <UITextFieldDelegate>
 @end
 
-@implementation CallMainViewController
+@implementation CallMultiMainViewController
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
     [self.navigationItem setHidesBackButton:YES];
     self.userLabel.text = [[ILiveLoginManager getInstance] getLoginId];
     [[TILCallManager sharedInstance] setIncomingCallListener:[[CallIncomingListener alloc] init]];
@@ -40,8 +39,12 @@
     if(peerId.length <= 0){
         return;
     }
-    CallMakeViewController *make = [self.storyboard instantiateViewControllerWithIdentifier:@"CallMakeViewController"];
-    make.peerId = self.peerTextField.text;
+    CallMultiMakeViewController *make = [self.storyboard instantiateViewControllerWithIdentifier:@"CallMultiMakeViewController"];
+    NSArray *tempArray = [self.peerTextField.text componentsSeparatedByString:@" "];
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    [array addObjectsFromArray:tempArray];
+    [array addObject:[[ILiveLoginManager getInstance] getLoginId]];
+    make.memberArray = array;
     [self presentViewController:make animated:YES completion:nil];
 }
 

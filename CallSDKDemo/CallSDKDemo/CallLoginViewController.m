@@ -8,7 +8,8 @@
 
 #import "CallLoginViewController.h"
 #import "CallRegisterViewController.h"
-
+#import "CallC2CMainViewController.h"
+#import "CallMultiMainViewController.h"
 
 
 @implementation CallLoginViewController
@@ -28,7 +29,14 @@
     NSString *pwd = self.passTextField.text;
     [[ILiveLoginManager getInstance] tlsLogin:name pwd:pwd succ:^{
         [ws setUserDefault];
-        [ws performSegueWithIdentifier:@"toCallUser" sender:nil];
+        if(ws.segmentControl.selectedSegmentIndex == 0){
+            CallC2CMainViewController *call = [ws.storyboard instantiateViewControllerWithIdentifier:@"CallC2CMainViewController"];
+            [ws.navigationController pushViewController:call animated:YES];
+        }
+        else{
+            CallMultiMainViewController *call = [ws.storyboard instantiateViewControllerWithIdentifier:@"CallMultiMainViewController"];
+            [ws.navigationController pushViewController:call animated:YES];
+        }
     } failed:^(NSString *moudle, int errId, NSString *errMsg) {
         ws.errLabel.text = [NSString stringWithFormat:@"moldleID=%@;errid=%d;errmsg=%@",moudle,errId,errMsg];
     }];
