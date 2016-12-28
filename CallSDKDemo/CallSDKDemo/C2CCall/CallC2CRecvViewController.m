@@ -255,6 +255,10 @@
     [[ILiveRoomManager getInstance] setWhite:slider.value];
 }
 
+- (IBAction)switchRenderView:(id)sender {
+    [_call switchRenderView:_invite.sponsorId with:_myId];
+}
+
 
 #pragma mark - 界面管理
 - (void)setButtonEnable:(BOOL)isAccept{
@@ -265,6 +269,7 @@
     _hangUpButton.enabled = isAccept;
     _recvInviteButton.enabled = !isAccept;
     _rejectButton.enabled = !isAccept;
+    _switchRenderButton.enabled = isAccept;
 }
 
 - (void)setText:(NSString *)text

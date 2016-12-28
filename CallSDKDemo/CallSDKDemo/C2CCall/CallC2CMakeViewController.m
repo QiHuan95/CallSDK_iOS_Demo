@@ -153,6 +153,10 @@
     [[ILiveRoomManager getInstance] setWhite:slider.value];
 }
 
+- (IBAction)switchRenderView:(id)sender {
+    [_call switchRenderView:_peerId with:_myId];
+}
+
 
 #pragma mark - 音视频事件回调
 - (void)onMemberAudioOn:(BOOL)isOn members:(NSArray *)members
@@ -274,6 +278,7 @@
 - (void)setEnableButton:(BOOL)isMake{
     _cancelInviteButton.enabled = !isMake;
     _hungUpButton.enabled = isMake;
+    _switchRenderButton.enabled = isMake;
 }
 
 - (void)setText:(NSString *)text

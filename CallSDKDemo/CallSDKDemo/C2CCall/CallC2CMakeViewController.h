@@ -18,7 +18,9 @@
 - (IBAction)cancelInvite:(id)sender;
 - (IBAction)onBeautyChange:(id)sender;
 - (IBAction)onWhiteChange:(id)sender;
+- (IBAction)switchRenderView:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *switchRenderButton;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @property (weak, nonatomic) IBOutlet UIButton *hungUpButton;

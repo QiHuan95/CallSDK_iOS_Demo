@@ -21,7 +21,9 @@
 - (IBAction)hangUp:(id)sender;
 - (IBAction)onBeautyChange:(id)sender;
 - (IBAction)onWhiteChange:(id)sender;
+- (IBAction)switchRenderView:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *switchRenderButton;
 @property (weak, nonatomic) IBOutlet UIButton *rejectButton;
 @property (weak, nonatomic) IBOutlet UIButton *closeCameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *switchCameraButton;
