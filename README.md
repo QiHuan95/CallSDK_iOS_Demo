@@ -15,7 +15,7 @@ CallSDKDemo里面集成了第三方库，下载CallSDKDemo工程之后,需要再
 
 [AVSDK_beta下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/AVSDK1.8.4_BETA.zip)
 
-[IMSDK下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/IMSDK_foravsdk1.8.4.zip)
+[IMSDK_beta下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/IMSDK_beta.zip)
 
 下载成功之后解压放到工程目录的Frameworks文件夹下，如下图所示：
 Frameworks目录
