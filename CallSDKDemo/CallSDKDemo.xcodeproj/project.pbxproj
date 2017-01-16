@@ -41,7 +41,6 @@
 		9BB8457A1DE692C000A0F1A4 /* CallIncomingListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8456F1DE692C000A0F1A4 /* CallIncomingListener.m */; };
 		9BB8457B1DE692C000A0F1A4 /* CallLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845711DE692C000A0F1A4 /* CallLoginViewController.m */; };
 		9BB8457F1DE692C000A0F1A4 /* CallRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */; };
-		CF18CDD51E1251EE00E291F6 /* ILiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDD41E1251EE00E291F6 /* ILiveSDK.framework */; };
 		CF18CDE11E1259C700E291F6 /* xplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDDC1E1259C700E291F6 /* xplatform.framework */; };
 		CF18CDE51E12609E00E291F6 /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDE41E12609E00E291F6 /* QAVSDK.framework */; };
 		CF62AEBF1E111B6900843724 /* CallMultiMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */; };
@@ -96,7 +95,6 @@
 		9BB845711DE692C000A0F1A4 /* CallLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallLoginViewController.m; sourceTree = "<group>"; };
 		9BB845781DE692C000A0F1A4 /* CallRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRegisterViewController.h; sourceTree = "<group>"; };
 		9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRegisterViewController.m; sourceTree = "<group>"; };
-		CF18CDD41E1251EE00E291F6 /* ILiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveSDK.framework; sourceTree = "<group>"; };
 		CF18CDDC1E1259C700E291F6 /* xplatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xplatform.framework; sourceTree = "<group>"; };
 		CF18CDE41E12609E00E291F6 /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
 		CF62AEB91E111B6900843724 /* CallMultiMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMainViewController.h; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				9BB845181DE68BEA00A0F1A4 /* Foundation.framework in Frameworks */,
 				CF18CDE11E1259C700E291F6 /* xplatform.framework in Frameworks */,
 				9BB845231DE68BEA00A0F1A4 /* UIKit.framework in Frameworks */,
-				CF18CDD51E1251EE00E291F6 /* ILiveSDK.framework in Frameworks */,
 				9BB8456A1DE68F5B00A0F1A4 /* TLSSDK.framework in Frameworks */,
 				9BB8451C1DE68BEA00A0F1A4 /* CoreGraphics.framework in Frameworks */,
 				9BB845271DE68BEA00A0F1A4 /* libbz2.tbd in Frameworks */,
@@ -236,7 +233,6 @@
 		9BB8454D1DE68F5B00A0F1A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF18CDD41E1251EE00E291F6 /* ILiveSDK.framework */,
 				9BB8454E1DE68F5B00A0F1A4 /* AVSDK */,
 				9BB845571DE68F5B00A0F1A4 /* IMSDK */,
 			);
@@ -497,7 +493,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CallSDKDemo/CallSDKDemo.pch;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../TCILiveSDK_AV1.8.4/TILCallSDK/TILCallSDK/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../TCILiveSDK_AV1.8.4/TILCallSDK/TILCallSDK/**",
+					"$(SRCROOT)/../../../TCILiveSDK_AV1.8.4/ILiveSDK/ILiveSDK/**",
+				);
 				INFOPLIST_FILE = CallSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -522,7 +521,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CallSDKDemo/CallSDKDemo.pch;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../TCILiveSDK_AV1.8.4/TILCallSDK/TILCallSDK/**";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../../TCILiveSDK_AV1.8.4/TILCallSDK/TILCallSDK/**",
+					"$(SRCROOT)/../../../TCILiveSDK_AV1.8.4/ILiveSDK/ILiveSDK/**",
+				);
 				INFOPLIST_FILE = CallSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

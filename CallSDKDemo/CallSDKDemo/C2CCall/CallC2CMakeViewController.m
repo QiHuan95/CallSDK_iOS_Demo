@@ -169,18 +169,11 @@
         for (TILCallMember *member in members) {
             NSString *identifier = member.identifier;
             if([identifier isEqualToString:_myId]){
-                if([_call getCallStatus] == TILCALL_STATUS_CHATTING){
-                    [_call addRenderFor:identifier atFrame:CGRectMake(20, 20, 120, 160)];
-                }
-                else{
-                    [_call addRenderFor:identifier atFrame:self.view.bounds];
-                }
-                [_call bringRenderViewToFront:_myId];
+                [_call addRenderFor:_myId atFrame:self.view.bounds];
+                [_call sendRenderViewToBack:_myId];
             }
             else{
-                [_call modifyRenderView:CGRectMake(20, 20, 120, 160) forIdentifier:_myId];
-                [_call addRenderFor:identifier atFrame:self.view.bounds];
-                [_call switchRenderView:_myId with:identifier];
+                [_call addRenderFor:identifier atFrame:CGRectMake(20, 20, 120, 160)];
             }
         }
     }
