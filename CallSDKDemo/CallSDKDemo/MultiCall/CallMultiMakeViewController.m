@@ -45,8 +45,7 @@
     
     _call = [[TILMultiCall alloc] initWithConfig:config];
     
-    UIView *baseView = [_call createRenderViewIn:self.view];
-    [self.view sendSubviewToBack:baseView];
+    [_call createRenderViewIn:self.view];
     __weak typeof(self) ws = self;
     [_call makeCall:nil custom:nil result:^(TILCallError *err) {
         if(err){
@@ -147,27 +146,15 @@
                 CGRect frame = [self getRenderFrame:count];
                 [_call addRenderFor:identifier atFrame:frame];
                 [_indexArray addObject:identifier];
-                [_call bringRenderViewToFront:identifier];
             }
         }
     }
     else{
         for (TILCallMember *member in members) {
             NSString *identifier = member.identifier;
-            if([identifier isEqualToString:myId]){
-                [_call removeRenderFor:identifier];
-                if(_indexArray.count == 0){
-                    NSString *firstIdentifier = _indexArray[0];
-                    [_call modifyRenderView:self.view.bounds forIdentifier:firstIdentifier];
-                    [_indexArray removeObject:firstIdentifier];
-                }
-            }
-            else{
-                [_call removeRenderFor:identifier];
-                [_indexArray removeObject:identifier];
-            }
+            [_call removeRenderFor:identifier];
+            [_indexArray removeObject:identifier];
         }
-        [self updateRenderFrame];
     }
 }
 
@@ -206,8 +193,13 @@
             break;
         case TILCALL_NOTIF_TIMEOUT:
         {
-            [self setText:[NSString stringWithFormat:@"%@呼叫超时",sender]];
-            [self selfDismiss];
+            if([sender isEqualToString:myId]){
+                [self setText:[NSString stringWithFormat:@"%@呼叫超时",sender]];
+                [self selfDismiss];
+            }
+            else{
+                [self setText:[NSString stringWithFormat:@"%@手机可能不在身边",sender]];
+            }
         }
             break;
         case TILCALL_NOTIF_REFUSE:
@@ -312,14 +304,6 @@
     CGFloat y = 20 + (count * (height + 10));
     CGFloat x = 20;
     return CGRectMake(x, y, width, height);
-}
-
-- (void)updateRenderFrame{
-    for(NSInteger index = 0; index < _indexArray.count; index++){
-        CGRect frame = [self getRenderFrame:index];
-        NSString *identifier = _indexArray[index];
-        [_call modifyRenderView:frame forIdentifier:identifier];
-    }
 }
 
 - (void)setButtonEnable:(BOOL)isMake{

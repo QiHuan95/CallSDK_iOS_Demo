@@ -48,8 +48,7 @@
 
 - (IBAction)recvInvite:(id)sender {
     __weak typeof(self) ws = self;
-    UIView *baseView = [_call createRenderViewIn:self.view];
-    [self.view sendSubviewToBack:baseView];
+    [_call createRenderViewIn:self.view];
     [_call accept:^(TILCallError *err) {
         if(err){
             [ws setText:[NSString stringWithFormat:@"接受失败:%@-%d-%@",err.domain,err.code,err.errMsg]];
@@ -151,41 +150,28 @@
 - (void)onMemberCameraVideoOn:(BOOL)isOn members:(NSArray *)members
 {
     //注意：此处的处理逻辑请按各自业务修改
+    NSString *myId = [[ILiveLoginManager getInstance] getLoginId];
     if(isOn){
         for (TILCallMember *member in members) {
             NSString *identifier = member.identifier;
-            if([identifier isEqualToString:_invite.sponsorId]){
-                [_call addRenderFor:_invite.sponsorId atFrame:self.view.bounds];
-                [_call sendRenderViewToBack:_invite.sponsorId];
+            if([identifier isEqualToString:myId]){
+                [_call addRenderFor:myId atFrame:self.view.bounds];
+                [_call sendRenderViewToBack:myId];
             }
             else{
                 NSInteger count = _indexArray.count;
                 CGRect frame = [self getRenderFrame:count];
                 [_call addRenderFor:identifier atFrame:frame];
                 [_indexArray addObject:identifier];
-                [_call bringRenderViewToFront:identifier];
             }
         }
     }
     else{
         for (TILCallMember *member in members) {
             NSString *identifier = member.identifier;
-            if([identifier isEqualToString:_invite.sponsorId]){
-                [_call removeRenderFor:identifier];
-                if(_indexArray.count != 0){
-                    //数组首个用户占有大画面
-                    NSString *firstIdentifier = _indexArray[0];
-                    [_call modifyRenderView:self.view.bounds forIdentifier:firstIdentifier];
-                    [_indexArray removeObject:firstIdentifier];
-                }
-            }
-            else{
-                [_call removeRenderFor:identifier];
-                [_indexArray removeObject:identifier];
-            }
+            [_call removeRenderFor:identifier];
+            [_indexArray removeObject:identifier];
         }
-        //更新渲染位置
-        [self updateRenderFrame];
     }
 }
 
@@ -223,8 +209,16 @@
             break;
         case TILCALL_NOTIF_TIMEOUT:
         {
-            [self setText:[NSString stringWithFormat:@"%@呼叫超时",sender]];
-            [self selfDismiss];
+            if([sender isEqualToString:myId]){
+                [self setText:[NSString stringWithFormat:@"%@等待超时",sender]];
+            }
+            else if([sender isEqualToString:_invite.sponsorId]){
+                [self setText:[NSString stringWithFormat:@"%@呼叫超时",sender]];
+                [self selfDismiss];
+            }
+            else{
+                [self setText:[NSString stringWithFormat:@"%@手机可能不在身边",sender]];
+            }
         }
             break;
         case TILCALL_NOTIF_REFUSE:
@@ -327,14 +321,6 @@
     CGFloat y = 20 + (count * (height + 10));
     CGFloat x = 20;
     return CGRectMake(x, y, width, height);
-}
-
-- (void)updateRenderFrame{
-    for(NSInteger index = 0; index < _indexArray.count; index++){
-        CGRect frame = [self getRenderFrame:index];
-        NSString *identifier = _indexArray[index];
-        [_call modifyRenderView:frame forIdentifier:identifier];
-    }
 }
 
 - (void)setButtonEnable:(BOOL)isAccept{

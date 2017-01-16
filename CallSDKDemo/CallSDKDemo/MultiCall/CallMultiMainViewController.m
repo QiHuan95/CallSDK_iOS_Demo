@@ -41,10 +41,7 @@
     }
     CallMultiMakeViewController *make = [self.storyboard instantiateViewControllerWithIdentifier:@"CallMultiMakeViewController"];
     NSArray *tempArray = [self.peerTextField.text componentsSeparatedByString:@" "];
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    [array addObjectsFromArray:tempArray];
-    [array addObject:[[ILiveLoginManager getInstance] getLoginId]];
-    make.memberArray = array;
+    make.memberArray = tempArray;
     [self presentViewController:make animated:YES completion:nil];
 }
 

@@ -34,7 +34,7 @@
     
     TILCallListener * listener = [[TILCallListener alloc] init];
     //注意：
-    //［通知回调］可以获取通话的事件通知
+    //［通知回调］可以获取通话的事件通知，建议双人和多人都走notifListener
     // [通话状态回调] 也可以获取通话的事件通知
     listener.callStatusListener = self;
     listener.memberEventListener = self;
@@ -49,8 +49,7 @@
     
     _call = [[TILC2CCall alloc] initWithConfig:config];
     
-    UIView *baseView = [_call createRenderViewIn:self.view];
-    [self.view sendSubviewToBack:baseView];
+    [_call createRenderViewIn:self.view];
     __weak typeof(self) ws = self;
     [_call makeCall:nil custom:nil result:^(TILCallError *err) {
         if(err){
@@ -181,7 +180,7 @@
             else{
                 [_call modifyRenderView:CGRectMake(20, 20, 120, 160) forIdentifier:_myId];
                 [_call addRenderFor:identifier atFrame:self.view.bounds];
-                [_call sendRenderViewToBack:identifier];
+                [_call switchRenderView:_myId with:identifier];
             }
         }
     }

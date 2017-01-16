@@ -42,12 +42,8 @@
 		9BB8457B1DE692C000A0F1A4 /* CallLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845711DE692C000A0F1A4 /* CallLoginViewController.m */; };
 		9BB8457F1DE692C000A0F1A4 /* CallRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */; };
 		CF18CDD51E1251EE00E291F6 /* ILiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDD41E1251EE00E291F6 /* ILiveSDK.framework */; };
-		CF18CDDE1E1259C700E291F6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CF18CDD91E1259C700E291F6 /* README.md */; };
-		CF18CDDF1E1259C700E291F6 /* Shaderf.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CF18CDDA1E1259C700E291F6 /* Shaderf.glsl */; };
-		CF18CDE01E1259C700E291F6 /* Shaderv.glsl in Resources */ = {isa = PBXBuildFile; fileRef = CF18CDDB1E1259C700E291F6 /* Shaderv.glsl */; };
 		CF18CDE11E1259C700E291F6 /* xplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDDC1E1259C700E291F6 /* xplatform.framework */; };
 		CF18CDE51E12609E00E291F6 /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDE41E12609E00E291F6 /* QAVSDK.framework */; };
-		CF4F0F351E13BA18003E341B /* TILCallSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4F0F341E13BA18003E341B /* TILCallSDK.framework */; };
 		CF62AEBF1E111B6900843724 /* CallMultiMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */; };
 		CF62AEC01E111B6900843724 /* CallMultiMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBC1E111B6900843724 /* CallMultiMakeViewController.m */; };
 		CF62AEC11E111B6900843724 /* CallMultiRecvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBE1E111B6900843724 /* CallMultiRecvViewController.m */; };
@@ -101,12 +97,8 @@
 		9BB845781DE692C000A0F1A4 /* CallRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRegisterViewController.h; sourceTree = "<group>"; };
 		9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRegisterViewController.m; sourceTree = "<group>"; };
 		CF18CDD41E1251EE00E291F6 /* ILiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveSDK.framework; sourceTree = "<group>"; };
-		CF18CDD91E1259C700E291F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		CF18CDDA1E1259C700E291F6 /* Shaderf.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shaderf.glsl; sourceTree = "<group>"; };
-		CF18CDDB1E1259C700E291F6 /* Shaderv.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shaderv.glsl; sourceTree = "<group>"; };
 		CF18CDDC1E1259C700E291F6 /* xplatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xplatform.framework; sourceTree = "<group>"; };
 		CF18CDE41E12609E00E291F6 /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
-		CF4F0F341E13BA18003E341B /* TILCallSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TILCallSDK.framework; sourceTree = "<group>"; };
 		CF62AEB91E111B6900843724 /* CallMultiMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMainViewController.h; sourceTree = "<group>"; };
 		CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMultiMainViewController.m; sourceTree = "<group>"; };
 		CF62AEBB1E111B6900843724 /* CallMultiMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMakeViewController.h; sourceTree = "<group>"; };
@@ -139,7 +131,6 @@
 				9BB845661DE68F5B00A0F1A4 /* ImSDK.framework in Frameworks */,
 				9BB845181DE68BEA00A0F1A4 /* Foundation.framework in Frameworks */,
 				CF18CDE11E1259C700E291F6 /* xplatform.framework in Frameworks */,
-				CF4F0F351E13BA18003E341B /* TILCallSDK.framework in Frameworks */,
 				9BB845231DE68BEA00A0F1A4 /* UIKit.framework in Frameworks */,
 				CF18CDD51E1251EE00E291F6 /* ILiveSDK.framework in Frameworks */,
 				9BB8456A1DE68F5B00A0F1A4 /* TLSSDK.framework in Frameworks */,
@@ -245,7 +236,6 @@
 		9BB8454D1DE68F5B00A0F1A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CF4F0F341E13BA18003E341B /* TILCallSDK.framework */,
 				CF18CDD41E1251EE00E291F6 /* ILiveSDK.framework */,
 				9BB8454E1DE68F5B00A0F1A4 /* AVSDK */,
 				9BB845571DE68F5B00A0F1A4 /* IMSDK */,
@@ -257,9 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				CF18CDE41E12609E00E291F6 /* QAVSDK.framework */,
-				CF18CDD91E1259C700E291F6 /* README.md */,
-				CF18CDDA1E1259C700E291F6 /* Shaderf.glsl */,
-				CF18CDDB1E1259C700E291F6 /* Shaderv.glsl */,
 				CF18CDDC1E1259C700E291F6 /* xplatform.framework */,
 			);
 			path = AVSDK;
@@ -364,10 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB845691DE68F5B00A0F1A4 /* readme in Resources */,
-				CF18CDE01E1259C700E291F6 /* Shaderv.glsl in Resources */,
 				9BB8454C1DE68EE900A0F1A4 /* Main.storyboard in Resources */,
 				9BB844FB1DE68BCC00A0F1A4 /* LaunchScreen.storyboard in Resources */,
-				CF18CDDF1E1259C700E291F6 /* Shaderf.glsl in Resources */,
 				9BB844F81DE68BCC00A0F1A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,7 +374,6 @@
 				CF62AEC81E111CA500843724 /* CallC2CMainViewController.m in Sources */,
 				CF62AEBF1E111B6900843724 /* CallMultiMainViewController.m in Sources */,
 				CF62AEC11E111B6900843724 /* CallMultiRecvViewController.m in Sources */,
-				CF18CDDE1E1259C700E291F6 /* README.md in Sources */,
 				9BB8457B1DE692C000A0F1A4 /* CallLoginViewController.m in Sources */,
 				9BB8457F1DE692C000A0F1A4 /* CallRegisterViewController.m in Sources */,
 				9BB844ED1DE68BCC00A0F1A4 /* main.m in Sources */,

@@ -37,7 +37,7 @@
     TILCallListener * listener = [[TILCallListener alloc] init];
     listener.callStatusListener = self;
     //注意：
-    //［通知回调］可以获取通话的事件通知
+    //［通知回调］可以获取通话的事件通知，建议双人和多人都走notifListener
     // [通话状态回调] 也可以获取通话的事件通知
     listener.memberEventListener = self;
     listener.notifListener = self;
@@ -52,8 +52,7 @@
 
 - (IBAction)recvInvite:(id)sender {
     __weak typeof(self) ws = self;
-    UIView *baseView = [_call createRenderViewIn:self.view];
-    [self.view sendSubviewToBack:baseView];
+    [_call createRenderViewIn:self.view];
     [_call accept:^(TILCallError *err) {
         if(err){
             [ws setText:[NSString stringWithFormat:@"接受失败:%@-%d-%@",err.domain,err.code,err.errMsg]];
