@@ -11,7 +11,7 @@ CallSDKDemo里面集成了第三方库，下载CallSDKDemo工程之后,需要再
 
 [ILiveSDK_1.2.1下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/ILiveSDK_1.2.1.zip)
                 
-[TILCallSDK_1.0.4下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/TILCallSDK_1.0.4.zip)
+[TILCallSDK_1.0.5下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/TILCallSDK_1.0.5.zip)
 
 [AVSDK_beta下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/AVSDK_1.8.4_beta.zip)
 
