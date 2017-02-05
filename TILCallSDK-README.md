@@ -145,12 +145,12 @@ config.sponsorConfig = sponsorConfig;
 _call = [[TILC2CCall alloc] initWithConfig:config];
 [_call createRenderViewIn:self.view];
 [_call makeCall:nil custom:nil result:^(TILCallError *err) {
-if(err){
-NSLog(@"呼叫失败");
-}
-else{
-NSLog(@"呼叫成功");
-}
+  if(err){
+    NSLog(@"呼叫失败");
+  }
+  else{
+    NSLog(@"呼叫成功");
+  }
 }];
 
 ```
@@ -179,24 +179,24 @@ onlineInvite | 是否在线邀请
 
 - (void)onMemberCameraVideoOn:(BOOL)isOn members:(NSArray *)members
 {
-if(isOn){
-for (TILCallMember *member in members) {
-NSString *identifier = member.identifier;
-if([identifier isEqualToString:_myId]){
-[_call addRenderFor:_myId atFrame:self.view.bounds];
-[_call sendRenderViewToBack:_myId];
-}
-else{
-[_call addRenderFor:identifier atFrame:CGRectMake(20, 20, 120, 160)];
-}
-}
-}
-else{
-for (TILCallMember *member in members) {
-NSString *identifier = member.identifier;
-[_call removeRenderFor:identifier];
-}
-}
+  if(isOn){
+    for (TILCallMember *member in members) {
+      NSString *identifier = member.identifier;
+      if([identifier isEqualToString:_myId]){
+        [_call addRenderFor:_myId atFrame:self.view.bounds];
+        [_call sendRenderViewToBack:_myId];
+      }
+      else{
+        [_call addRenderFor:identifier atFrame:CGRectMake(20, 20, 120, 160)];
+      }
+    }
+  }
+  else{
+    for (TILCallMember *member in members) {
+      NSString *identifier = member.identifier;
+      [_call removeRenderFor:identifier];
+    }
+  }
 }
 ```
 
@@ -246,12 +246,12 @@ config.responderConfig = responderConfig;
 _call = [[TILMultiCall alloc] initWithConfig:config];
 [_call createRenderViewIn:self.view];
 [_call accept:^(TILCallError *err) {
-if(err){
-NSLog(@"接受失败");
-}
-else{
-NSLog(@"接受成功");
-}
+  if(err){
+    NSLog(@"接受失败");
+  }
+  else{
+    NSLog(@"接受成功");
+  }
 }];
 ```
 
@@ -271,24 +271,24 @@ invitation | 捕获到的来电邀请对象
 
 - (void)onMemberCameraVideoOn:(BOOL)isOn members:(NSArray *)members
 {
-if(isOn){
-for (TILCallMember *member in members) {
-NSString *identifier = member.identifier;
-if([identifier isEqualToString:_myId]){
-[_call addRenderFor:_myId atFrame:self.view.bounds];
-[_call sendRenderViewToBack:_myId];
-}
-else{
-[_call addRenderFor:identifier atFrame:CGRectMake(20, 20, 120, 160)];
-}
-}
-}
-else{
-for (TILCallMember *member in members) {
-NSString *identifier = member.identifier;
-[_call removeRenderFor:identifier];
-}
-}
+  if(isOn){
+    for (TILCallMember *member in members) {
+      NSString *identifier = member.identifier;
+      if([identifier isEqualToString:_myId]){
+        [_call addRenderFor:_myId atFrame:self.view.bounds];
+        [_call sendRenderViewToBack:_myId];
+      }
+      else{
+        [_call addRenderFor:identifier atFrame:CGRectMake(20, 20, 120, 160)];
+      }
+    }
+  }
+  else{
+    for (TILCallMember *member in members) {
+      NSString *identifier = member.identifier;
+      [_call removeRenderFor:identifier];
+    }
+  }
 }
 ```
 
