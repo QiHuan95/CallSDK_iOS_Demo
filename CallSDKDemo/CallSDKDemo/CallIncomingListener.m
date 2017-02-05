@@ -22,6 +22,19 @@
 
 - (void)onMultiCallInvitation:(TILCallInvitation *)invitation
 {
+//回复忙时
+//    TILCallConfig * config = [[TILCallConfig alloc] init];
+//    TILCallBaseConfig * baseConfig = [[TILCallBaseConfig alloc] init];
+//    baseConfig.peerId = invitation.sponsorId;
+//    baseConfig.callType = invitation.callType;
+//    baseConfig.isSponsor = NO;
+//    config.baseConfig = baseConfig;
+//    
+//    TILCallResponderConfig * responderConfig = [[TILCallResponderConfig alloc] init];
+//    responderConfig.callInvitation = invitation;
+//    config.responderConfig = responderConfig;
+//    TILMultiCall *call = [[TILMultiCall alloc] initWithConfig:config];
+//    [call responseLineBusy:nil];
     UINavigationController *nav = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
     CallMultiRecvViewController *call = [nav.storyboard instantiateViewControllerWithIdentifier:@"CallMultiRecvViewController"];
     call.invite = invitation;

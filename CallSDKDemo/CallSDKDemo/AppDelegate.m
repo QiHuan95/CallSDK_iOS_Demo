@@ -10,7 +10,8 @@
 
 #define SDKAppID     1400013700
 #define AccountType  7285
-
+//#define SDKAppID     1400022273
+//#define AccountType  9612
 @interface AppDelegate ()
 
 @end

@@ -43,6 +43,7 @@
 		9BB8457F1DE692C000A0F1A4 /* CallRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */; };
 		CF18CDE11E1259C700E291F6 /* xplatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDDC1E1259C700E291F6 /* xplatform.framework */; };
 		CF18CDE51E12609E00E291F6 /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18CDE41E12609E00E291F6 /* QAVSDK.framework */; };
+		CF201CAC1E471065004FE6E6 /* ILiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF201CAA1E471065004FE6E6 /* ILiveSDK.framework */; };
 		CF62AEBF1E111B6900843724 /* CallMultiMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */; };
 		CF62AEC01E111B6900843724 /* CallMultiMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBC1E111B6900843724 /* CallMultiMakeViewController.m */; };
 		CF62AEC11E111B6900843724 /* CallMultiRecvViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62AEBE1E111B6900843724 /* CallMultiRecvViewController.m */; };
@@ -97,6 +98,7 @@
 		9BB845791DE692C000A0F1A4 /* CallRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRegisterViewController.m; sourceTree = "<group>"; };
 		CF18CDDC1E1259C700E291F6 /* xplatform.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = xplatform.framework; sourceTree = "<group>"; };
 		CF18CDE41E12609E00E291F6 /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
+		CF201CAA1E471065004FE6E6 /* ILiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveSDK.framework; sourceTree = "<group>"; };
 		CF62AEB91E111B6900843724 /* CallMultiMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMainViewController.h; sourceTree = "<group>"; };
 		CF62AEBA1E111B6900843724 /* CallMultiMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallMultiMainViewController.m; sourceTree = "<group>"; };
 		CF62AEBB1E111B6900843724 /* CallMultiMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallMultiMakeViewController.h; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				9BB8451E1DE68BEA00A0F1A4 /* CoreTelephony.framework in Frameworks */,
 				9BB845651DE68F5B00A0F1A4 /* IMCore.framework in Frameworks */,
 				9BB845221DE68BEA00A0F1A4 /* libstdc++.tbd in Frameworks */,
+				CF201CAC1E471065004FE6E6 /* ILiveSDK.framework in Frameworks */,
 				9BB845191DE68BEA00A0F1A4 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +236,7 @@
 		9BB8454D1DE68F5B00A0F1A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF201CAA1E471065004FE6E6 /* ILiveSDK.framework */,
 				9BB8454E1DE68F5B00A0F1A4 /* AVSDK */,
 				9BB845571DE68F5B00A0F1A4 /* IMSDK */,
 			);
