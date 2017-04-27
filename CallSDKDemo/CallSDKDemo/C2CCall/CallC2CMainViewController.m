@@ -20,7 +20,6 @@
     [super viewDidLoad];
     [self.navigationItem setHidesBackButton:YES];
     self.userLabel.text = [[ILiveLoginManager getInstance] getLoginId];
-    [[TILCallManager sharedInstance] setIncomingCallListener:[[CallIncomingListener alloc] init]];
 }
 
 //登出

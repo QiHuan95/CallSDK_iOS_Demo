@@ -8,7 +8,7 @@
 
 #import "CallC2CRecvViewController.h"
 
-@interface CallC2CRecvViewController () <TILCallNotificationListener,TILCallMemberEventListener,TILCallStatusListener>
+@interface CallC2CRecvViewController () <TILCallNotificationListener,TILCallMemberEventListener,TILCallStatusListener,TILCallMessageListener>
 @property (nonatomic, strong) TILC2CCall *call;
 @property (nonatomic, strong) NSString *myId;
 @end
@@ -31,7 +31,8 @@
     baseConfig.callType = TILCALL_TYPE_VIDEO;
     baseConfig.isSponsor = NO;
     baseConfig.peerId = _invite.sponsorId;
-    baseConfig.heartBeatInterval = 15;
+    baseConfig.heartBeatInterval = 0;
+    baseConfig.isAutoResponseBusy = YES;
     config.baseConfig = baseConfig;
     
     TILCallListener * listener = [[TILCallListener alloc] init];
@@ -41,11 +42,13 @@
     // [通话状态回调] 也可以获取通话的事件通知
     listener.memberEventListener = self;
     listener.notifListener = self;
+    listener.msgListener = self;
     
     config.callListener = listener;
     
     TILCallResponderConfig * responderConfig = [[TILCallResponderConfig alloc] init];
     responderConfig.callInvitation = _invite;
+    responderConfig.controlRole = @"interactTest";
     config.responderConfig = responderConfig;
     _call = [[TILC2CCall alloc] initWithConfig:config];
 }
@@ -291,5 +294,11 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [ws dismissViewControllerAnimated:YES completion:nil];
     });
+}
+
+- (void)onNewMessages:(NSArray *)messages
+{
+    NSString *text = ((TIMTextElem *)[messages[0] getElem:0]).text;
+    NSLog(@"%@",text);
 }
 @end

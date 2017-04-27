@@ -8,10 +8,9 @@
 
 #import "AppDelegate.h"
 
-#define SDKAppID     1400013700
-#define AccountType  7285
-//#define SDKAppID     1400022273
-//#define AccountType  9612
+#define SDKAppID     1400028285
+#define AccountType  11818
+
 @interface AppDelegate ()
 
 @end

@@ -42,6 +42,7 @@
     
     TILCallResponderConfig * responderConfig = [[TILCallResponderConfig alloc] init];
     responderConfig.callInvitation = _invite;
+    responderConfig.controlRole = @"interactTest";
     config.responderConfig = responderConfig;
     _call = [[TILMultiCall alloc] initWithConfig:config];
 }

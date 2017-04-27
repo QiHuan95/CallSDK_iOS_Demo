@@ -41,6 +41,7 @@
     sponsorConfig.waitLimit = 10;
     sponsorConfig.callId = (int)([[NSDate date] timeIntervalSince1970]) % 1000 * 1000 + arc4random() % 1000;
     sponsorConfig.onlineInvite = YES;
+    sponsorConfig.controlRole = @"hostTest";
     config.sponsorConfig = sponsorConfig;
     
     _call = [[TILMultiCall alloc] initWithConfig:config];

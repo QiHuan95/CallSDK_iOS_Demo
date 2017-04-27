@@ -1,18 +1,20 @@
 {
   "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B540E5FB1FC022B7A575878ECDDD9688F27EF7F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "8417ab44-c799-11e4-acac-0d5433960dbe++5606" : {
-
+    "8417ab44-c799-11e4-acac-0d5433960dbe++8814" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "show_proj\/branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "show_proj\/tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "show_proj\/trunk"
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "8B540E5FB1FC022B7A575878ECDDD9688F27EF7F" : 9223372036854775807,
-    "8417ab44-c799-11e4-acac-0d5433960dbe++5606" : 9223372036854775807
+    "8417ab44-c799-11e4-acac-0d5433960dbe++8814" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D765B012-0D06-4E90-92C7-155CA648AF58",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "8B540E5FB1FC022B7A575878ECDDD9688F27EF7F" : "CallSDK_iOS_Demo\/",
-    "8417ab44-c799-11e4-acac-0d5433960dbe++5606" : "..\/TCILiveSDK_AV1.8.4"
+    "8417ab44-c799-11e4-acac-0d5433960dbe++8814" : "..\/ILiveSDK_Main"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "CallSDKDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,7 +23,12 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/tc-svn.tencent.com\/bpf\/bpf_OpenSDK_rep",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8417ab44-c799-11e4-acac-0d5433960dbe++5606"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8417ab44-c799-11e4-acac-0d5433960dbe++8814"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/tc-svn.tencent.com\/bpf\/bpf_OpenSDK_rep",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8417ab44-c799-11e4-acac-0d5433960dbe++8814"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhaoyang21cn\/CallSDK_iOS_Demo.git",

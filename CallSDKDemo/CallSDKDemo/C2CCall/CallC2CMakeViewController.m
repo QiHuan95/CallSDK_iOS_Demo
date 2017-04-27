@@ -29,7 +29,7 @@
     baseConfig.callType = TILCALL_TYPE_VIDEO;
     baseConfig.isSponsor = YES;
     baseConfig.peerId = _peerId;
-    baseConfig.heartBeatInterval = 15;
+    baseConfig.heartBeatInterval = 0;
     config.baseConfig = baseConfig;
     
     TILCallListener * listener = [[TILCallListener alloc] init];
@@ -42,9 +42,10 @@
     
     config.callListener = listener;
     TILCallSponsorConfig *sponsorConfig = [[TILCallSponsorConfig alloc] init];
-    sponsorConfig.waitLimit = 10;
+    sponsorConfig.waitLimit = 0;
     sponsorConfig.callId = (int)([[NSDate date] timeIntervalSince1970]) % 1000 * 1000 + arc4random() % 1000;
-    sponsorConfig.onlineInvite = YES;
+    sponsorConfig.onlineInvite = NO;
+    sponsorConfig.controlRole = @"hostTest";
     config.sponsorConfig = sponsorConfig;
     
     _call = [[TILC2CCall alloc] initWithConfig:config];
