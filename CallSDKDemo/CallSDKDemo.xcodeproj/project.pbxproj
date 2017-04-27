@@ -510,10 +510,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CallSDKDemo/CallSDKDemo.pch;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../../ILiveSDK_Main/TILCallSDK/TILCallSDK/**",
-					"$(SRCROOT)/../../../ILiveSDK_Main/ILiveSDK/ILiveSDK/**",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CallSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -539,10 +536,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CallSDKDemo/CallSDKDemo.pch;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../../../ILiveSDK_Main/TILCallSDK/TILCallSDK/**",
-					"$(SRCROOT)/../../../ILiveSDK_Main/ILiveSDK/ILiveSDK/**",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = CallSDKDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
