@@ -22,7 +22,7 @@ Frameworks目录
 
 ![](http://mc.qcloudimg.com/static/img/65349e480c8cb235f54615c55931aa2d/image.png)
 
-AVSDK目录（**AVSDK1.9.0需要添加QAVEffect文件夹下的opencv2.framework以及添加系统包AssersLibrary.framework）
+AVSDK目录（**AVSDK1.9.0需要添加QAVEffect文件夹下的opencv2.framework以及添加系统包AssersLibrary.framework**）
  
 ![](http://mc.qcloudimg.com/static/img/6285a0b1b22a75536c4f8c8e0650cc92/image.png)
 
