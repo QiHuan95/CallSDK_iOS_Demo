@@ -1,7 +1,7 @@
 ## IOS_TILCallSDK_ChangeList
 
 ###### V1.0.8(2017-05-22)
-* TILCallNotification增加calleId用于区分当前的通知属于哪一个会话
+* TILCallNotification增加callId用于区分当前的通知属于哪一个会话
 * 信令时间戳统一为服务器时间戳
 * TILCallBaseConfig增加设备控制字段
   * 是否开启摄像头autoCamera
