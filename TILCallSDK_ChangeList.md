@@ -1,5 +1,16 @@
 ## IOS_TILCallSDK_ChangeList
 
+###### V1.0.8(2017-05-22)
+* TILCallNotification增加called用于区分当前的通知属于哪一个会话
+* 信令时间戳统一为服务器时间戳
+* TILCallBaseConfig增加设备控制字段
+  * 是否开启摄像头
+  * 是否开启麦克风
+  * 是否开启扬声器
+  * 摄像头方向
+  * 是否开启高音质
+* TILCallListener增加首帧回调
+
 ###### V1.0.7(2017-04-27)
 * TILCallBaseConfig添加自动忙时回复配置isAutoResponseBusy 
 
