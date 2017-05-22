@@ -4,11 +4,11 @@
 * TILCallNotification增加calleId用于区分当前的通知属于哪一个会话
 * 信令时间戳统一为服务器时间戳
 * TILCallBaseConfig增加设备控制字段
-  * 是否开启摄像头
-  * 是否开启麦克风
-  * 是否开启扬声器
-  * 摄像头方向
-  * 是否开启高音质
+  * 是否开启摄像头autoCamera
+  * 是否开启麦克风autoMic
+  * 是否开启扬声器autoSpeaker
+  * 摄像头方向cameraPos
+  * 是否开启高音质autoHdAudio
 * TILCallListener增加首帧回调
 
 ###### V1.0.7(2017-04-27)
