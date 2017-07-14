@@ -1,5 +1,11 @@
 ## IOS_TILCallSDK_ChangeList
 
+###### V1.0.10(2017-07-14)
+* 将废弃以下接口<br>
+(void)onMemberEnterCall:(NSArray*)members;<br>
+(void)onMemberQuitCall:(NSArray*)members;<br>
+* 修改- (NSArray*)getMembers;接口为获取历史邀请成员列表
+
 ###### V1.0.9(2017-06-22)
 * 优化邀请逻辑，过滤无效邀请
 * 优化通话边界值状态
