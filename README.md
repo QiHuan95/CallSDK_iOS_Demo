@@ -12,13 +12,9 @@ TILCallSDK基于[ILiveSDK](https://github.com/zhaoyang21cn/ILiveSDK_iOS_Demos)�
 ## 集成
 CallSDKDemo里面集成了第三方库，下载CallSDKDemo工程之后,需要再次下载相关的SDK放到指定的目录下。
 
-1、[ILiveSDK_1.4.0下载地址](http://dldir1.qq.com/hudongzhibo/ILiveSDK/ILiveSDK_1.4.0.zip)
+1、[ILiveSDK、AVSDK、IMSDK下载](https://github.com/zhaoyang21cn/iLiveSDK_iOS_Suixinbo)
 
 2、[TILCallSDK_1.0.10下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/TILCallSDK_1.0.10.zip)
-
-3、[IMSDK_2.5.1下载地址](http://dldir1.qq.com/hudongzhibo/ILiveSDK/IMSDK_2.5.1.zip)
-
-4、[AVSDK_1.9.0.35_Beat下载地址](http://dldir1.qq.com/hudongzhibo/ILiveSDK/AVSDK_1.9.0.35_Beat.zip)
 
 下载成功之后解压放到工程目录的Frameworks文件夹下，如下图所示：
 Frameworks目录
