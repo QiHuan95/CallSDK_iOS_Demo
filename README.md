@@ -14,7 +14,7 @@ CallSDKDemo里面集成了第三方库，下载CallSDKDemo工程之后,需要再
 
 1、[ILiveSDK、AVSDK、IMSDK下载](https://github.com/zhaoyang21cn/iLiveSDK_iOS_Suixinbo)
 
-2、[TILCallSDK_1.0.11.2下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/TILCallSDK_1.0.11.2.zip)
+2、[TILCallSDK_1.0.12下载](http://dldir1.qq.com/hudongzhibo/ILiveSDK/TILCallSDK_1.0.12.zip)
 
 下载成功之后解压放到工程目录的Frameworks文件夹下，如下图所示：
 Frameworks目录
