@@ -1,5 +1,8 @@
 ## IOS_TILCallSDK_ChangeList
 
+###### V1.0.12(2017-08-23)
+* c2c call心跳消息改为在线消息
+
 ###### V1.0.11(2017-08-07)
 * 修复调用sendGroupOnlineMessage导致crash的问题
 * 修复对方挂断时偶现obj-msgSend crash问题
