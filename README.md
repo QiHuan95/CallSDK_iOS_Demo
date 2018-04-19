@@ -13,7 +13,7 @@ CallSDKDemo里面集成了ILiveSDK、AVSDK、IMSDK，执行Frameworks文件夹�
 sh loadSDK.sh
 ```
 
-下载成功后解压放到工程目录的Frameworks文件夹目录如下：
+下载成功后的Frameworks文件夹目录如下：
 ```
 AVSDK
 ILiveSDK
